@@ -1,0 +1,15 @@
+function num(digit, number) {
+    let i = 0;
+    let answer = "";
+    while (i < number.length) {
+        if (digit === number[i]) {
+            answer = "yes";
+            break;
+        } else {
+            answer = "no";
+        }
+        i++;
+    }
+    return answer;
+}
+console.log(num("5", "2463"))

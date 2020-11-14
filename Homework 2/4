@@ -1,0 +1,15 @@
+function number ( n ) {
+    if (n === 1){
+        return "yes";
+    } else if ( n === 2){
+        return "yes";
+    }else {
+        for (let i = 2; i < n; i++){
+            if (n % i === 0){
+                return "no";
+            }
+        } 
+    }return "yes";
+
+}
+console.log(number(401))
